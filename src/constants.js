@@ -1,0 +1,2 @@
+export const ADD_CITY_TO_FAV = 'ADD_CITY_TO_FAV';
+export const REMOVE_CITY_FROM_FAV = 'REMOVE_CITY_FROM_FAV';

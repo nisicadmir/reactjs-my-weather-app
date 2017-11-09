@@ -1,0 +1,254 @@
+:root { --fontColor: #7a7a7a; }
+body {
+   font: 16px Helvetica;
+}
+
+.navbar-form{
+  min-width: 300px;
+}
+.right-inner-addon {
+  position: relative;
+  width: 100%;
+}
+
+.right-inner-addon input {
+  width: 100%;
+  font-size: 90%;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  padding-right: 10%;
+  color: #555;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+.right-inner-addon input:focus {
+  font-size: 90%;
+}
+.right-inner-addon span {
+  position: absolute;
+  right: 0px;
+  padding: 3.7% 4%;
+  pointer-events: none;
+  color: var(--fontColor);
+}
+/*search div*/
+.search-div{
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+.search-result{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.search-result:first-child{
+  border-top: 1px solid #f2f2f2;
+}
+.search-result li{
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 35px;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: white;
+  cursor: pointer;
+  font-size: 90%; 
+  color: var(--fontColor)
+}
+.search-result li:hover{
+  background-color: #f2f2f2;
+}
+.search-result a{
+  text-decoration: none;
+  color: var(--fontColor);
+  display:block;
+}
+
+/*dashboard*/
+.cityWeather-dash{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid var(--fontColor);
+}
+.city-name-dash{
+  font-size: 150%;
+  color: var(--fontColor);
+}
+.city-name-dash a{
+  color: var(--fontColor);
+}
+.city-text-dash{
+  font-size: 90%;
+  color: var(--fontColor);
+  margin-top: 10px;
+}
+.city-temp-dash{
+  font-size: 100%;
+  color: var(--fontColor);
+}
+.city-temp-dash span{
+  font-size: 80% !important;
+  color: var(--fontColor);
+  padding: 10px;
+}
+.city-temp-dash button{
+  background: white;
+  border: none;
+  color: blue;
+}
+.city-img-dash i{
+  font-size: 70px;
+  color: var(--fontColor);
+  margin-top: 15px;
+}
+/*dashboard forecast*/
+.forecast-dash{
+  margin-top: 20px;
+}
+.forecast-dash{
+  font-size: 60%;
+  color: var(--fontColor);
+}
+.forecast-dash i{
+  font-size: 150%;
+  color: var(--fontColor);
+}
+.empty-cities-text{
+  font-size: 200%;
+  color: var(--fontColor);
+}
+
+/*city detail*/
+.city-detail{
+  margin-top: 10px;
+}
+.city-name{
+  font-size: 150%;
+  color: var(--fontColor);
+}
+/*city option dropdown*/
+.city-option-dropdown{
+  position: relative;
+  display: inline-block;
+}
+.city-option-dropdown span {
+  color: var(--fontColor);
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 0;
+  font-size: 90%;
+  border: none;
+  cursor: pointer;
+}
+/* Dropdown Content (Hidden by Default) */
+.city-option-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: auto;
+}
+/* Links inside the dropdown */
+.city-option-dropdown-content span {
+    color: var(--fontColor);
+    padding: 5px 7px;
+    display: block;
+    font-size: 80%;
+}
+/* Change color of dropdown links on hover */
+.city-option-dropdown-content span:hover {
+  background-color: #f1f1f1
+}
+/* Show the dropdown menu on hover */
+.city-option-dropdown:hover .city-option-dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.city-option-dropdown:hover .city-option-dropdown button {
+    background-color: #3e8e41;
+}
+.loading-fav{
+  background-color: #ffffff;
+  background-image: url("http://localhost:3000/loading.gif");
+  background-size: 30px 30px;
+  background-position:right center;
+  background-repeat: no-repeat;
+}
+/*end of dropdown*/
+
+.city-date{
+  font-size: 90%;
+  color: var(--fontColor);
+}
+.city-text{
+  font-size: 120%;
+  color: var(--fontColor);
+}
+.city-temp{
+  font-size: 200%;
+  color: var(--fontColor);
+}
+.city-temp span{
+  font-size: 50% !important;
+  color: var(--fontColor);
+  padding: 10px;
+}
+.city-temp button{
+  background: white;
+  border: none;
+  color: blue;
+}
+.city-img i{
+  font-size: 70px;
+  color: var(--fontColor);
+  margin-top: 5px;
+}
+
+
+.city-astronomy{
+  font-size: 100%;
+  color: var(--fontColor);
+}
+.city-atmosphere{
+  font-size: 100%;
+  color: var(--fontColor);
+}
+.city-wind{
+  font-size: 100%;
+  color: var(--fontColor);
+}
+
+/*forecast*/
+.forecast{
+  margin-top: 30px;
+}
+.forecast p{
+  font-size: 130%;
+  color: var(--fontColor);
+}
+.forecast i{
+  font-size: 150%;
+  color: var(--fontColor);
+}
+
+/*about*/
+.container p{
+  font-size: 150%;
+  color: var(--fontColor);
+}
