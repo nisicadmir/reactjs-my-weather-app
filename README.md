@@ -20,7 +20,7 @@ npm install
 ## Using app
 Run server
 ```
-npm run server
+npm start
 ```
 Go to localhost:3000
 ```
